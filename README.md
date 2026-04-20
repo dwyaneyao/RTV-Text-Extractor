@@ -1,6 +1,8 @@
 # RTV Text Extractor
 
-An external Python tool for translators who want to produce translation packs for [RTV-mod-Localizer](https://github.com/). It reads `.vmz` mods (which are plain ZIP archives containing `.gd`, `.tscn`, `.tres`, and `.cfg` files), pulls out UI / MCM text that is safe to translate, and writes ready-to-fill JSON pack files.
+[![Companion repo: RTV-Mod-Localizer](https://img.shields.io/badge/Companion%20repo-RTV--Mod--Localizer-blue?style=for-the-badge&logo=github)](https://github.com/dwyaneyao/RTV-Mod-Localizer)
+
+An external Python tool for translators who want to produce translation packs for [RTV-Mod-Localizer](https://github.com/dwyaneyao/RTV-Mod-Localizer). It reads `.vmz` mods (which are plain ZIP archives containing `.gd`, `.tscn`, `.tres`, and `.cfg` files), pulls out UI / MCM text that is safe to translate, and writes ready-to-fill JSON pack files.
 
 The tool is **read-only**. It never modifies any `.vmz` file, never touches your game install, and never fills in translations — every `to:` field in the output is left empty. Filling them in by hand (or pipeline) is your job.
 
